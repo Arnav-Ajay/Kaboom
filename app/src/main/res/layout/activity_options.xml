@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/background_blue"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.msarn.operatingsystems.Activity.MainActivity">
+    <TextView
+        android:id="@+id/how_to_play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/How_To_Play"
+        android:textSize="40sp"
+        android:textColor="@color/colorWhite"/>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:scrollbars="vertical">
+
+        <TextView
+            android:id="@+id/how_to_play_description"
+            android:layout_width="fill_parent"
+            android:layout_height="500dp"
+            android:text="@string/how_to_play_description"
+            android:textColor="@color/colorWhite"
+            android:textAlignment="gravity"
+            android:layout_margin="5dp"/>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Back"
+        android:textSize="20sp"
+        android:layout_alignParentBottom="true"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="back"/>
+
+
+</RelativeLayout>

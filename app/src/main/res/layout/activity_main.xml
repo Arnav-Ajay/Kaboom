@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.msarn.operatingsystems.Activity.MainActivity"
+    android:background="@drawable/background_blue">
+
+    <ImageButton
+        android:src="@drawable/kaboomb"
+        android:scaleType="centerCrop"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="300sp"
+        android:contentDescription="@string/app_name"
+        android:onClick="openEnter"
+        android:background="@null"/>
+
+    <ImageButton
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:scaleType="fitCenter"
+        android:background="@null"
+        android:src="@drawable/how_to_play_white"
+        android:onClick="openOptions"
+        android:layout_alignParentEnd="true"
+        android:contentDescription="@string/description"
+        android:layout_margin="10sp"/>
+
+</RelativeLayout>
+
+
+

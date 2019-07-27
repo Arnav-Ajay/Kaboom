@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_blue"
+    tools:context="com.example.msarn.operatingsystems.Activity.ComputerWinActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/homewa"
+        android:text="@string/lose"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="20dp"
+        android:textColor="@color/colorWhite"
+        android:textSize="44sp"/>
+
+    <ImageButton
+        android:id="@+id/homewa"
+        android:src="@drawable/home"
+        android:contentDescription="@string/description"
+        android:background="@null"
+        android:layout_above="@+id/play_againwa"
+        android:scaleType="fitCenter"
+        android:layout_width="wrap_content"
+        android:layout_height="150sp"
+        android:layout_margin="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="back"/>
+
+    <ImageButton
+        android:src="@drawable/play_again"
+        android:contentDescription="@string/description"
+        android:id="@+id/play_againwa"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        android:layout_width="match_parent"
+        android:layout_height="150sp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:layout_marginTop="10dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="onButtonPressed"/>
+
+
+</RelativeLayout>

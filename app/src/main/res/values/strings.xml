@@ -1,0 +1,51 @@
+<resources>
+
+    <string name="app_name">KaBoom!</string>
+    <string name="description">Image Button</string>
+    <string name="Action">ACTION</string>
+    <string name="Replace">REPLACE</string>
+    <string name="No_Action">NO ACTION</string>
+    <string name="Player_Name">Player Name</string>
+    <string name="Done">Done</string>
+    <string name="How_To_Play">How To Play</string>
+    <string name="Sound">Sound</string>
+    <string name="Music">Music</string>
+    <string name="Back">Back</string>
+    <string name="Begin">BEGIN!</string>
+    <string name="win">You Win!</string>
+    <string name="lose">You Lose!</string>
+    <string name="swap">SWAP</string>
+    <string name="Discard">DISCARD</string>
+    <string name="Deck">DECK</string>
+    <string name="Show">SHOW</string>
+    <string name="Pile">PILE</string>
+    <string name="how_to_play_description"> Each Player Has 4 Cards in the Beginning.\n
+                                            2 Cards are shown at the start of the game to each player.\n
+                                            All Cards are kept Face Down.\n\n
+
+                                           When you Select a Card from Deck, Depending on the card,\n
+                                           You can perform certain Actions, which is Assinged to that Card.\n
+                                            7 and 8 : See you Own Card.\n
+                                            9 and 10 : See Opponents Card.\n
+                                            Jack and Oueen : Blind Swap.\n
+                                            Black King : See and Swap.\n
+                                            Red King : Values 0.\n
+                                            Ace - 6 : No Action Assigned to these Cards.\n\n
+
+                                            Or can Choose not to perform said Action and discard the Card.\n
+                                            The moment you discard that Card, eveyone, including you, are eligible to throw a card of same face and Number.\n
+                                            The one who Discards the Card first, loses the Card while the others have to keep theirs.\n\n
+                                            You can Discard Someone Elses Card,\n
+                                            if such a case occurs,\n
+                                            You can Choose any one of your card and give it to the player whose card you discarded.\n\n
+
+                                            Value of a Card is the same as the Card Number.\n
+                                            Jack, Queen, and Black King has Value 10.\n\n
+
+                                            A Player wins if the has the lowest total Value.\n
+
+                                            But Remember, if you choose the 2nd Card which is to be Discarded WRONG,\n
+                                            You Get an Additional Card, and as a Bonus You Get to keep the Card that you just discarded :p\n\n
+
+                                            When you Think You can Win, Tap  KaBOOM.</string>
+</resources>

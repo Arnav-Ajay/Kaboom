@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true"
+    android:background="@drawable/background_blue">
+
+    <!-- Kaboom -->
+    <ImageButton
+        android:contentDescription="@string/description"
+        android:src="@drawable/kaboomb"
+        android:scaleType="centerCrop"
+        android:background="@null"
+        android:layout_width="140sp"
+        android:layout_height="75sp"
+        android:onClick="KABOOM"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:id="@+id/imageButton" />
+
+    <!-- Opponent's Cards -->
+    <RelativeLayout
+        android:id="@+id/lay_playera_cards"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <!-- Cards -->
+        <ImageView
+            android:id="@+id/img_playera0"
+            android:layout_width="70dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:onClick="clickOnOpponent0"
+            android:src="@drawable/card_backside_2"
+            android:contentDescription="@string/description"/>
+
+        <ImageView
+            android:contentDescription="@string/description"
+            android:id="@+id/img_playera1"
+            android:layout_width="70dp"
+            android:layout_height="150dp"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/img_playera0"
+            android:onClick="clickOnOpponent1"
+            android:src="@drawable/card_backside_2" />
+
+        <ImageView
+            android:id="@+id/img_playera2"
+            android:layout_width="70dp"
+            android:layout_height="150dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="14dp"
+            android:layout_toStartOf="@+id/img_playera3"
+            android:contentDescription="@string/description"
+            android:onClick="clickOnOpponent2"
+            android:src="@drawable/card_backside_2" />
+
+        <ImageView
+            android:contentDescription="@string/description"
+            android:id="@+id/img_playera3"
+            android:layout_width="70dp"
+            android:layout_height="150dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="24dp"
+            android:onClick="clickOnOpponent3"
+            android:src="@drawable/card_backside_2" />
+
+
+        <Button
+            android:id="@+id/button10"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_alignStart="@+id/img_playera0"
+            android:layout_centerVertical="true"
+            android:backgroundTint="@color/colorPrimary"
+            android:onClick="clickOnOpponent0c"
+            android:text="@string/swap" />
+
+        <!-- Swap -->
+        <Button
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/button10"
+            android:layout_toEndOf="@+id/img_playera0"
+            android:onClick="clickOnOpponent1c"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="@string/swap"
+            android:id="@+id/button11" />
+
+        <Button
+            android:id="@+id/button9"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_alignBaseline="@+id/button11"
+            android:layout_alignBottom="@+id/button11"
+            android:layout_alignStart="@+id/img_playera2"
+            android:onClick="clickOnOpponent2c"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="@string/swap" />
+
+        <Button
+            android:layout_width="70dp"
+            android:id="@+id/button8"
+            android:layout_height="50dp"
+            android:layout_alignBaseline="@+id/button9"
+            android:layout_alignBottom="@+id/button9"
+            android:layout_toEndOf="@+id/img_playera2"
+            android:onClick="clickOnOpponent3c"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="@string/swap" />
+    </RelativeLayout>
+
+    <!-- Your Cards -->
+    <RelativeLayout
+        android:id="@+id/lay_playerd_cards"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <ImageView
+            android:id="@+id/img_playerd0"
+            android:layout_width="70dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:onClick="clickOnPlayer0"
+            android:src="@drawable/card_backside_2"
+            android:contentDescription="@string/description"/>
+
+        <ImageView
+            android:id="@+id/img_playerd1"
+            android:layout_width="70dp"
+            android:layout_height="150dp"
+            android:layout_alignParentTop="true"
+            android:onClick="clickOnPlayer1"
+            android:layout_toEndOf="@+id/img_playerd0"
+            android:contentDescription="@string/description"
+            android:src="@drawable/card_backside_2" />
+
+        <ImageView
+            android:id="@+id/img_playerd2"
+            android:layout_width="70dp"
+            android:layout_height="150dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="13dp"
+            android:layout_toStartOf="@+id/img_playerd3"
+            android:onClick="clickOnPlayer2"
+            android:contentDescription="@string/description"
+            android:src="@drawable/card_backside_2" />
+
+        <ImageView
+            android:id="@+id/img_playerd3"
+            android:layout_width="70dp"
+            android:layout_height="150dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="23dp"
+            android:onClick="clickOnPlayer3"
+            android:contentDescription="@string/description"
+            android:src="@drawable/card_backside_2" />
+
+    </RelativeLayout>
+
+    <!-- Action -->
+
+    <Button
+        android:layout_width="wrap_content"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lay_playera_cards"
+        android:layout_toStartOf="@+id/imageButton"
+        android:onClick="clickOnAction"
+        android:id="@+id/action"
+        android:text="@string/Action"/>
+
+    <!-- Replace -->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/Replace"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:onClick="clickOnReplace"
+        android:layout_below="@+id/lay_playera_cards"
+        android:id="@+id/button12" />
+
+
+    <!-- Discard -->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView3"
+        android:text="@string/Discard"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:onClick="clickOnNoAction"
+        android:layout_below="@+id/lay_playera_cards" />
+
+    <!-- Deck -->
+    <ImageView
+        android:src="@drawable/card_backside_2"
+        android:id="@+id/lay_deck_cards"
+        android:contentDescription="@string/description"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:onClick="clickOnDeck"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/lay_pile_cards"
+        android:layout_marginStart="12dp"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/lay_playerd_cards"
+        android:layout_alignEnd="@+id/lay_deck_cards"
+        android:layout_marginBottom="14dp"
+        android:layout_marginEnd="18dp"
+        android:text="@string/Deck"
+        android:textColor="@color/colorAccent"
+        android:textSize="20sp" />
+
+    <!-- show -->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageButton"
+        android:text="@string/Show"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:onClick="showcards"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/button2" />
+
+    <!-- pile -->
+
+    <ImageView
+        android:contentDescription="@string/description"
+        android:src="@drawable/card_backside_2"
+        android:id="@+id/lay_pile_cards"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="12dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView"
+        android:textColor="@color/colorAccent"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_alignEnd="@+id/lay_pile_cards"
+        android:layout_marginEnd="22dp"
+        android:text="@string/Pile"
+        android:textSize="20sp"
+        android:id="@+id/textView3" />
+
+
+</RelativeLayout>
